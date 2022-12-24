@@ -1,0 +1,72 @@
+.container {
+    position: absolute;
+    text-align: center;
+    border-style: solid;
+    left: 50%;
+    top: 40%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    padding: 120px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: rgb(0, 6, 6);
+    background-color: #027594;
+    min-height: 30%;
+    opacity: 90%;
+    
+}
+
+h2 {
+    color: rgb(224, 203, 13);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: 600;    
+  }
+
+
+body {
+    background-image: url("/images/MARVEL.JPG"),url("/images/MARVEL2.JPG"),url("/images/MARVEL3.JPG");
+    background-repeat: no-repeat,repeat,repeat;
+    background-size: 160%;
+    background-position: center;
+    
+}
+
+.textbox {
+    min-width: 300px;
+    min-height: 50px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.submitButton {
+    min-width: 120px;
+    min-height: 40px;
+}
+
+.questionText {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornsilk;
+}
+
+.correct {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(49, 246, 0);
+}
+
+.incorrect {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }

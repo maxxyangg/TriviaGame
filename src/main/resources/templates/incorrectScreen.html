@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>GamePage</title>
+    <link th:href="@{/gamepage-stylesheet.css}" rel="stylesheet">
+
+  </head>    
+  <body >
+    
+    <div class="container" >
+      <h2> Marvel Trivia </h2>
+      <p class="questionText" th:text="${question.question}">hello</p>
+      
+      <form method="get" th:object="${question}" th:action="@{/handleSubmit}">
+        <input type="hidden"  th:field="*{correctAnswer}">
+        <input type="hidden" th:field="*{question}">
+        <input class="textbox" type="text" placeholder="Answer" th:field="*{answer}" autocomplete="off">
+        <br><br>
+        <input class="submitButton" type="submit" value="Submit">
+      </form> 
+
+      <br>
+      <p class="incorrect"> Incorrect! </p>
+
+    </div>
+    
+  
+  </body>
+</html>

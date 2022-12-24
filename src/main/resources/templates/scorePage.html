@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>GamePage</title>
+    <link th:href="@{/gamepage-stylesheet.css}" rel="stylesheet">
+
+  </head>    
+  <body >
+    
+    <div class="container" >
+      <h2> Marvel Trivia </h2>
+      <p class="questionText">score</p>
+      <p class="questionText" th:text="${score.score}">hello</p>
+      <p class="questionText">/</p>
+      <p class="questionText" th:text="${score.total}">hello</p>
+      
+      <div class="topnav">
+        <a th:href="@{/start}">Restart</a>
+        
+
+    </div>
+    
+  
+  </body>
+</html>
